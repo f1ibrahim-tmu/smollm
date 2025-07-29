@@ -1,8 +1,13 @@
-# Fine-tuning
+# Fine-tuning & Post-training
+
+## SmolLM3-3B
+The post-training code for SmolLM3 is available in the Alignement Handbook: https://github.com/huggingface/alignment-handbook/tree/main/recipes/smollm3
+
+We are open-sourcing all the artifacts to train [SmolLM3-3B](https://huggingface.co/HuggingFaceTB/SmolLM3-3B). You can find the configuration files for the three post-training stages (mid-training, SFT, and DPO).
 
 ## SmolLM2 Instruct
 
-We build the SmolLM2 Instruct family by finetuning the base 1.7B on [SmolTalk](https://huggingface.co/datasets/HuggingFaceTB/smoltalk) and the base 360M and 135M models on [Smol-smoltalk](https://huggingface.co/datasets/HuggingFaceTB/smol-smoltalk) using `TRL` and the alignement handbook and then doing DPO on [UltraFeedBack](https://huggingface.co/datasets/openbmb/UltraFeedback). You can find the scipts and instructions for dohere: https://github.com/huggingface/alignment-handbook/tree/main/recipes/smollm2#instructions-to-train-smollm2-17b-instruct 
+We build the SmolLM2 Instruct family by finetuning the base 1.7B on [SmolTalk](https://huggingface.co/datasets/HuggingFaceTB/smoltalk) and the base 360M and 135M models on [Smol-smoltalk](https://huggingface.co/datasets/HuggingFaceTB/smol-smoltalk) using `TRL` and the alignement handbook and then doing DPO on [UltraFeedBack](https://huggingface.co/datasets/openbmb/UltraFeedback). You can find the scipts and instructions in [here](https://github.com/huggingface/alignment-handbook/tree/main/recipes/smollm2#instructions-to-train-smollm2-17b-instruct) 
 
 ## Custom script
 Here, we provide a simple script for finetuning SmolLM2. In this case, we fine-tune the base 1.7B on python data.

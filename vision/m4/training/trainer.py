@@ -1221,7 +1221,6 @@ Batch sizes:
             self.kill_switch_activated = True
 
     def _check_jz_time_and_memory(self, curr_opt_step):
-        # From https://github.com/wandb/wandb/blob/9c777265f8cea1eaeb0407dd37ab889aeea81114/wandb/sdk/internal/stats.py#L263
         if self.accelerator.is_local_main_process:
             self.memory_value = torch.tensor(psutil.virtual_memory().percent).to(self.accelerator.device)
         else:
